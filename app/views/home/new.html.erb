@@ -1,0 +1,10 @@
+<h1>Home#new</h1>
+
+<form action="/home/create" method="post">
+  First name:<br>
+  <input type="text" name="a" value="제목을 입력하시오"><br>
+  Last name:<br>
+  <input type="text" name="b" value="content"><br><br>
+  <input type="submit" value="Submit">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>

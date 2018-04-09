@@ -1,0 +1,10 @@
+<h1>Home#index</h1>
+<a href='/home/new'>글쓰러가기</a>
+
+
+<% @post.each do |x| %>
+<hr>
+    제목 : <a href='/home/show/<%=x.id%>'><%= x.title %></a><br>
+    내용 : <%= x.content %><br>
+<hr>
+<% end%>
